@@ -7,6 +7,8 @@ Here we list all of papers related to two-stage neural summarization. Summarizat
 * ...
 
 ### List of papers
-1. Zi-Yi Dou, Pengfei Liu, Hiroaki Hayashi, Zhengbao Jiang, Graham Neubig. [GSum: A General Framework for Guided Neural Abstractive Summarization](https://arxiv.org/pdf/2010.08014.pdf). NAACL 2021.
-2. Yixin Liu, Zi-Yi Dou, Pengfei Liu. [RefSum: Refactoring Neural Summarization](https://arxiv.org/pdf/2104.07210.pdf). NAACL 2021.
-3. Yixin Liu, Pengfei Liu. [SimCLS: A Simple Framework for Contrastive Learning of Abstractive Summarization](https://arxiv.org/pdf/2106.01890.pdf). ACL 2021.
+1. Zi-Yi Dou, Pengfei Liu, Hiroaki Hayashi, Zhengbao Jiang, Graham Neubig. [GSum: A General Framework for Guided Neural Abstractive Summarization](https://arxiv.org/pdf/2010.08014.pdf). NAACL 2021.  
+CNN/DM results: 45.94 R-1 / 22.32 R-2 / 42.48 R-L
+3. Yixin Liu, Zi-Yi Dou, Pengfei Liu. [RefSum: Refactoring Neural Summarization](https://arxiv.org/pdf/2104.07210.pdf). NAACL 2021.
+4. Yixin Liu, Pengfei Liu. [SimCLS: A Simple Framework for Contrastive Learning of Abstractive Summarization](https://arxiv.org/pdf/2106.01890.pdf). ACL 2021.
+5. Shusheng Xu, Xingxing Zhang, Yi Wu, Furu Wei. [https://arxiv.org/abs/2109.03481](https://arxiv.org/pdf/2109.03481.pdf). AAAI 2022.
