@@ -2,8 +2,9 @@
 
 ## Scope
 Here we list all of papers related to two-stage neural summarization. Summarization can be extractive or abstractive. The two-stage aspect is defined broadly speaking as any method which involves re-training a base sequence-to-sequence summarization model *which has already been fine-tuned* (using the summary labels from the given dataset). Two-stage models come in different flavors:
-* Fine-tuning the model again, with a *different loss* (e.g, contrastive learning objective).
-* Generating summary candidates, then *re-ranking* them. 
+* Fine-tuning the model again, with a *different loss* (e.g, contrastive learning objective). For instance: SeqCo, BRIO. 
+* Using *guidance signal* from another model. For instance: GSum. 
+* Generating summary candidates, then *re-ranking* them. For instance: SimCLS, SummaReranker.
 * ...
 
 ## List of main (single-stage) summarization papers for reference
