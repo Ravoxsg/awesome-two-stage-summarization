@@ -1,12 +1,18 @@
 # awesome-two-stage-summarization
 
-### Scope
+## Scope
 Here we list all of papers related to two-stage neural summarization. Summarization can be extractive or abstractive. The two-stage aspect is defined broadly speaking as any method which involves re-training a base sequence-to-sequence summarization model *which has already been fine-tuned* (using the summary labels from the given dataset). Two-stage models come in different flavors:
 * Fine-tuning the model again, with a *different loss* (e.g, contrastive learning objective).
 * Generating summary candidates, then *re-ranking* them. 
 * ...
 
-### List of papers
+## List of main (single-stage) summarization papers for reference
+1. Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Ves Stoyanov, Luke Zettlemoyer. [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461.pdf).  
+CNN/DM results (BART-large): 44.16 R-1 / 21.28 R-2 / 40.90 R-L
+2. Jingqing Zhang, Yao Zhao, Mohammad Saleh, Peter J. Liu. [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf).  
+CNN/DM results (PEGASUS-large pre-trained on HugeNews): 44.17 R-1 / 21.47 R-2 / 41.11 R-L
+
+## List of two-stage summarization papers
 1. Zi-Yi Dou, Pengfei Liu, Hiroaki Hayashi, Zhengbao Jiang, Graham Neubig. [GSum: A General Framework for Guided Neural Abstractive Summarization](https://arxiv.org/pdf/2010.08014.pdf). NAACL 2021.  
 CNN/DM results (GSum with MatchSum guidance): 45.94 R-1 / 22.32 R-2 / 42.48 R-L
 2. Yixin Liu, Zi-Yi Dou, Pengfei Liu. [RefSum: Refactoring Neural Summarization](https://arxiv.org/pdf/2104.07210.pdf). NAACL 2021.  
