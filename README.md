@@ -25,6 +25,6 @@ CNN/DM results (BART + SimCLS): 46.67 R-1 / 22.15 R-2 / 43.54 R-L
 4. Shusheng Xu, Xingxing Zhang, Yi Wu, Furu Wei. [Sequence Level Contrastive Learning for Text Summarization](https://arxiv.org/pdf/2109.03481.pdf). AAAI 2022.  
 CNN/DM results: 45.02 R-1 / 21.80 R-2 / 41.75 R-L
 5. Mathieu Ravaut, Shafiq Joty, Nancy F. Chen. [SummaReranker: A Multi-Task Mixture-of-Experts Re-ranking Framework for Abstractive Summarization](https://arxiv.org/pdf/2203.06569.pdf). ACL 2022.  
-CNN/DM results: 47.16 R-1 / 22.55 R-2 / 43.87 R-L
+CNN/DM results (PEGASUS + SummaReranker): 47.16 R-1 / 22.55 R-2 / 43.87 R-L
 6. Yixin Liu, Pengfei Liu, Dragomir Radev, Graham Neubig. [BRIO: Bringing Order to Abstractive Summarization](https://arxiv.org/pdf/2203.16804.pdf). ACL 2022.  
 CNN/DM results: 47.78 R-1 / 23.55 R-2 / 44.57 R-L
