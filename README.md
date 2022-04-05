@@ -1,7 +1,10 @@
 # awesome-two-stage-summarization
 
 ### Scope
-Here we list all of papers related to two-stage neural summarization. Summarization can be extractive or abstractive. The two-stage aspect is defined broadly speaking as any method which involves re-training a base sequence-to-sequence summarization model *which has already been fine-tuned* (using the summary labels from the given dataset). 
+Here we list all of papers related to two-stage neural summarization. Summarization can be extractive or abstractive. The two-stage aspect is defined broadly speaking as any method which involves re-training a base sequence-to-sequence summarization model *which has already been fine-tuned* (using the summary labels from the given dataset). Two-stage models come in different flavors:
+* Fine-tuning the model again, with a *different loss* (e.g, contrastive learning objective).
+* Generating summary candidates, then *re-ranking* them. 
+* ...
 
 ### List of papers
 1. Zi-Yi Dou, Pengfei Liu, Hiroaki Hayashi, Zhengbao Jiang, Graham Neubig. [GSum: A General Framework for Guided Neural Abstractive Summarization](https://arxiv.org/pdf/2010.08014.pdf). NAACL 2021.
