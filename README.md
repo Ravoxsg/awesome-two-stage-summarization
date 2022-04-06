@@ -8,7 +8,7 @@ This approach includes: ConSum, SeqCo, BRIO.
 This approach includes: GSum. 
 * Generating sets of summary candidates first, then *re-ranking* them.  
 This approach includes: SimCLS, SummaReranker.
-* Meta-learning to learn to select a better candidate.  
+* *Meta-learning* to learn to select a better candidate.  
 This approach includes: RefSum. 
 * ...
 
