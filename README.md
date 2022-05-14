@@ -35,3 +35,5 @@ CNN/DM results: **45.02 R-1 / 21.80 R-2 / 41.75 R-L**
 CNN/DM results (PEGASUS + SummaReranker): **47.16 R-1 / 22.55 R-2 / 43.87 R-L**
 7. Yixin Liu, Pengfei Liu, Dragomir Radev, Graham Neubig. [BRIO: Bringing Order to Abstractive Summarization](https://arxiv.org/pdf/2203.16804.pdf). ACL 2022.  
 CNN/DM results: **47.78 R-1 / 23.55 R-2 / 44.57 R-L**
+8. Yusen Zhang, Ansong Ni, Ziming Mao, Chen Henry Wu, Chenguang Zhu, Budhaditya Deb, Ahmed H. Awadallah, Dragomir Radev, Rui Zhang. [SUMM^N: A Multi-Stage Summarization Framework for Long Input Dialogues and Documents](https://arxiv.org/pdf/2110.10150.pdf). ACL 2022.  
+CNN/DM results: _ (not applied on CNN/DM)
