@@ -39,4 +39,5 @@ CNN/DM results (PEGASUS + SummaReranker): **47.16 R-1 / 22.55 R-2 / 43.87 R-L**
 CNN/DM results: **47.78 R-1 / 23.55 R-2 / 44.57 R-L**
 8. Yusen Zhang, Ansong Ni, Ziming Mao, Chen Henry Wu, Chenguang Zhu, Budhaditya Deb, Ahmed H. Awadallah, Dragomir Radev, Rui Zhang. [**SUMM^N**: A Multi-Stage Summarization Framework for Long Input Dialogues and Documents](https://arxiv.org/pdf/2110.10150.pdf). ACL 2022.  
 CNN/DM results: _ (not applied on CNN/DM)
-9. Mathieu Ravaut, Shafiq Joty, Nancy F. Chen. [Towards Summary Candidates Fusion (**SummaFusion**)](https://arxiv.org/abs/2210.08779). EMNLP 2022. 
+9. Mathieu Ravaut, Shafiq Joty, Nancy F. Chen. [Towards Summary Candidates Fusion (**SummaFusion**)](https://arxiv.org/abs/2210.08779). EMNLP 2022.  
+CNN/DM results: _ (not applied on CNN/DM)
