@@ -60,7 +60,7 @@ We see that 2nd-stage methods have moved the SOTA from ~44 R-1 to ~48 R-1 in a c
 
 ## References
 1. <a id="1"></a> Richard Yuanzhe Pang, He He. [Text Generation by Learning from Demonstrations (**GOLD**)](https://arxiv.org/pdf/2009.07839.pdf). ICLR 2021.
-2. 1. <a id="1"></a> Zi-Yi Dou, Pengfei Liu, Hiroaki Hayashi, Zhengbao Jiang, Graham Neubig. [**GSum**: A General Framework for Guided Neural Abstractive Summarization](https://arxiv.org/pdf/2010.08014.pdf). NAACL 2021.  
+2. <a id="1"></a> Zi-Yi Dou, Pengfei Liu, Hiroaki Hayashi, Zhengbao Jiang, Graham Neubig. [**GSum**: A General Framework for Guided Neural Abstractive Summarization](https://arxiv.org/pdf/2010.08014.pdf). NAACL 2021.  
 3. <a id="2"></a> Yixin Liu, Zi-Yi Dou, Pengfei Liu. [**RefSum**: Refactoring Neural Summarization](https://arxiv.org/pdf/2104.07210.pdf). NAACL 2021.  
 4. <a id="3"></a> Shichao Sun, Wenjie Li. [Alleviating Exposure Bias via Contrastive Learning for Abstractive Text Summarization (**ConSum**)](https://arxiv.org/pdf/2108.11846.pdf).
 5. <a id="4"></a> Yixin Liu, Pengfei Liu. [**SimCLS**: A Simple Framework for Contrastive Learning of Abstractive Summarization](https://arxiv.org/pdf/2106.01890.pdf). ACL 2021.
