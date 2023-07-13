@@ -67,7 +67,7 @@ We see that 2nd-stage methods have moved the SOTA from ~44 R-1 to ~48 R-1 in a c
 6. <a id="5"></a> Shusheng Xu, Xingxing Zhang, Yi Wu, Furu Wei. [Sequence Level Contrastive Learning for Text Summarization (**SeqCo**)](https://arxiv.org/pdf/2109.03481.pdf). AAAI 2022.
 7. <a id="6"></a> Mathieu Ravaut, Shafiq Joty, Nancy F. Chen. [**SummaReranker**: A Multi-Task Mixture-of-Experts Re-ranking Framework for Abstractive Summarization](https://arxiv.org/pdf/2203.06569.pdf). ACL 2022.  
 8. <a id="7"></a> Yixin Liu, Pengfei Liu, Dragomir Radev, Graham Neubig. [**BRIO**: Bringing Order to Abstractive Summarization](https://arxiv.org/pdf/2203.16804.pdf). ACL 2022.
-9. <a id="8"></a> Yao Zhao, Misha Khalman, Rishabh Joshi, Shashi Narayan, Mohammad Saleh, Peter J Liu. [Calibrating Sequence Likelihood Improves Conditional Language Generation (**SLiC**).](https://arxiv.org/pdf/2210.00045.pdf). ICLR 2023.
+9. <a id="8"></a> Yao Zhao, Misha Khalman, Rishabh Joshi, Shashi Narayan, Mohammad Saleh, Peter J Liu. [Calibrating Sequence Likelihood Improves Conditional Language Generation (**SLiC**)](https://arxiv.org/pdf/2210.00045.pdf). ICLR 2023.
 10. <a id="9"></a> Mathieu Ravaut, Shafiq Joty, Nancy F. Chen. [Towards Summary Candidates Fusion (**SummaFusion**)](https://arxiv.org/abs/2210.08779). EMNLP 2022.
 11. <a id="10"></a> Jeewoo Sul and Yong Suk Choi. [Balancing Lexical and Semantic Quality in Abstractive Summarization (**BalSum**)](https://arxiv.org/pdf/2305.09898.pdf). ACL 2023.
 12. <a id="11"></a> Jiawen Xie, Qi Su, Shaoting Zhang, Xiaofan Zhang. [Alleviating Exposure Bias via Multi-level Contrastive Learning and Deviation Simulation in Abstractive Summarization (**SimMCS**)](https://aclanthology.org/2023.findings-acl.617.pdf). ACL 2023.
