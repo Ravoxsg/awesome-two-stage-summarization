@@ -40,18 +40,18 @@ We first show results with baseline (1st stage) models:
 
 And now results with 2-stage models:
 
-| **Model**         | **Base Model** | **R-1** | **R-2** | **R-L** |
-|-------------------|----------------|---------|---------|---------|
-| GSum [1]          | BART           | 45.94   | 22.32   | 42.48   |
-| RefSum [2]        | _              | 46.18   | 22.36   | 42.91   |
-| ConSum [3]        | PEGASUS        | 44.53   | 21.54   | 41.57   |
-| SimCLS [4]        | BART           | 46.67   | 22.15   | 43.54   |
-| SeqCo [5]         | BART           | 45.02   | 21.80   | 41.75   |
-| SummaReranker[6]  | PEGASUS        | 47.16   | 22.55   | 43.87   |
-| BRIO [7]          | BART           | 47.78   | 23.55   | 44.57   |
-| SLiC [8]          | PEGASUS        | 47.97   | 24.18   | 44.88   |
-| BalSum [10]       | BART           | 46.58   | 22.33   | 43.49   |
-| SimMCS [11]       | BART           | 48.38   | 24.17   | 44.79   |
+| **Model**                | **Base Model** | **R-1** | **R-2** | **R-L** |
+|--------------------------|----------------|---------|---------|---------|
+| GSum [[1](#1)]           | BART           | 45.94   | 22.32   | 42.48   |
+| RefSum [[2](#2)]         | _              | 46.18   | 22.36   | 42.91   |
+| ConSum [[3](#3)]         | PEGASUS        | 44.53   | 21.54   | 41.57   |
+| SimCLS [[4](#4)]         | BART           | 46.67   | 22.15   | 43.54   |
+| SeqCo [[5](#5)]          | BART           | 45.02   | 21.80   | 41.75   |
+| SummaReranker [[6](#6)]  | PEGASUS        | 47.16   | 22.55   | 43.87   |
+| BRIO [[7](#7)]           | BART           | 47.78   | 23.55   | 44.57   |
+| SLiC [[8](#8)]           | PEGASUS        | 47.97   | 24.18   | 44.88   |
+| BalSum [[10](#10)]       | BART           | 46.58   | 22.33   | 43.49   |
+| SimMCS [[[11](#11)]      | BART           | 48.38   | 24.17   | 44.79   |
 
 We see that 2nd-stage methods have moved the SOTA from ~44 R-1 to ~48 R-1 in a couple years.
 
