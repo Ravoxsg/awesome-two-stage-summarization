@@ -1,5 +1,8 @@
 # Two-stage Abstractive Summarization
 
+## Standard Abstractive Summarization
+Traditionally, abstractive summarization models are fine-tuned in a single-stage. For instance, one can use a BART, T5 or PEGASUS pre-trained checkpoint, then fine-tune it on the desired dataset. Fine-tuning is done by Maximum Likelihood Estimation (MLE) and negative log-likelihood loss, maximizing the probability that the model assigns to the (unique) ground-truth summary paired with the source document. During training, teacher forcing is used, while during inference, auto-regressive decoding is used. 
+
 ## Scope
 Here we list all of papers related to two-stage neural summarization. Summarization can be extractive or abstractive, we focus on **abstractive** summarization in this repo. The two-stage aspect is defined broadly speaking as any method which involves re-training a base sequence-to-sequence summarization model *which has already been fine-tuned* (using the summary labels from the given dataset). Two-stage models come in different flavors:
 * Fine-tuning the model *again*, with a *different loss* (e.g, contrastive learning objective).  
