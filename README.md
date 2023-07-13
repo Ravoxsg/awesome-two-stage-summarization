@@ -53,6 +53,8 @@ And now results with 2-stage models:
 | BalSum [10]       | BART           | 46.58   | 22.33   | 43.49   |
 | SimMCS [11]       | BART           | 48.38   | 24.17   | 44.79   |
 
+We see that 2nd-stage methods have moved the SOTA from ~44 R-1 to ~48 R-1 in a couple years.
+
 
 ## References
 1. Zi-Yi Dou, Pengfei Liu, Hiroaki Hayashi, Zhengbao Jiang, Graham Neubig. [**GSum**: A General Framework for Guided Neural Abstractive Summarization](https://arxiv.org/pdf/2010.08014.pdf). NAACL 2021.  
