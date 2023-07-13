@@ -27,6 +27,17 @@ This is the case of: SimCLS [4], SummaReranker [6], BRIO-ctr [7], BalSum [10]
 While other approaches perform multi-task learning, where the model is still fine-tuned with the NLL loss.  
 This is the case of: ConSum [3], SeqCo [5], BRIO-mul [7], SLiC [8], SummaFusion [9], SimMCS [11] 
 
+## Results on CNN-DailyMail
+
+We first show results with baseline (1st stage) models:
+
+| **Model**       | **R-1** | **R-2** | **R-L** |
+|-----------------|---------|---------|---------|
+| T5 (large)      | 42.50   | 20.68   | 39.75   |
+| BART (large)    | 44.16   | 21.28   | 40.90   |
+| PEGASUS (large) | 44.17   | 21.47   | 41.11   |
+
+
 ## References
 1. Zi-Yi Dou, Pengfei Liu, Hiroaki Hayashi, Zhengbao Jiang, Graham Neubig. [**GSum**: A General Framework for Guided Neural Abstractive Summarization](https://arxiv.org/pdf/2010.08014.pdf). NAACL 2021.  
 2. Yixin Liu, Zi-Yi Dou, Pengfei Liu. [**RefSum**: Refactoring Neural Summarization](https://arxiv.org/pdf/2104.07210.pdf). NAACL 2021.  
