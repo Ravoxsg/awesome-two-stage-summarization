@@ -1,4 +1,4 @@
-# awesome-two-stage-summarization
+# Two-stage Abstractive Summarization
 
 ## Scope
 Here we list all of papers related to two-stage neural summarization. Summarization can be extractive or abstractive, we focus on **abstractive** summarization in this repo. The two-stage aspect is defined broadly speaking as any method which involves re-training a base sequence-to-sequence summarization model *which has already been fine-tuned* (using the summary labels from the given dataset). Two-stage models come in different flavors:
