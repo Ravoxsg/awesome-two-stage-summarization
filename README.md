@@ -13,19 +13,19 @@ Due to these limitations, since around 2021, researchers have started training a
 ## Two-stage abstractive summarization techniques
 We attempt a broad categorization of two-stage abstractive summarization training techniques:
 - Using **guidance** from another model to improve the current model: GSum [[1](#1)]
-- **Meta-learning** to learn from different systems: RefSum [2]
+- **Meta-learning** to learn from different systems: RefSum [[2](#2)]
 - **Contrastive learning** (most popular type of approach):
-  - **Contrastive loss**: SeqCo [5]
-  - **Ranking loss**: ConSum [3], SimCLS [4], BRIO [7], SLiC [8], BalSum [10]
-  - **Binary cross-entropy loss**: SummaReranker [6]
-  - **Expected reward**: SLiC [8]
-  - Mix of **ranking loss + coarse-grained contrastive learning**: SimMCS [11]
-* **Fusion** of several summary candidates: SummaFusion [9]
+  - **Contrastive loss**: SeqCo [[5](#5)]
+  - **Ranking loss**: ConSum [[3](#3)], SimCLS [[4](#4)], BRIO [[7](#7)], SLiC [[8](#8)], BalSum [[10](#10)]
+  - **Binary cross-entropy loss**: SummaReranker [[6](#6)]
+  - **Expected reward**: SLiC [[8](#8)]
+  - Mix of **ranking loss + coarse-grained contrastive learning**: SimMCS [[11](#11)]
+* **Fusion** of several summary candidates: SummaFusion [[9](#9)]
 
 We highlight that some of these models just train the 2nd stage model, which cannot generate summaries by itself and must also rely on 1st stage model summary generation at inference.  
-This is the case of: SimCLS [4], SummaReranker [6], BRIO-ctr [7], BalSum [10]  
+This is the case of: SimCLS [[4](#4)], SummaReranker [[6](#6)], BRIO-ctr [[7](#7)], BalSum [[10](#10)]  
 While other approaches perform multi-task learning, where the model is still fine-tuned with the NLL loss.  
-This is the case of: ConSum [3], SeqCo [5], BRIO-mul [7], SLiC [8], SummaFusion [9], SimMCS [11] 
+This is the case of: ConSum [[3](#3)], SeqCo [[5](#5)], BRIO-mul [[7](#7)], SLiC [[8](#8)], SummaFusion [[9](#9)], SimMCS [[11](#11)]
 
 ## Results on CNN-DailyMail
 
@@ -58,13 +58,13 @@ We see that 2nd-stage methods have moved the SOTA from ~44 R-1 to ~48 R-1 in a c
 
 ## References
 1. <a id="1"></a> Zi-Yi Dou, Pengfei Liu, Hiroaki Hayashi, Zhengbao Jiang, Graham Neubig. [**GSum**: A General Framework for Guided Neural Abstractive Summarization](https://arxiv.org/pdf/2010.08014.pdf). NAACL 2021.  
-2. Yixin Liu, Zi-Yi Dou, Pengfei Liu. [**RefSum**: Refactoring Neural Summarization](https://arxiv.org/pdf/2104.07210.pdf). NAACL 2021.  
-3. Shichao Sun, Wenjie Li. [Alleviating Exposure Bias via Contrastive Learning for Abstractive Text Summarization (**ConSum**)](https://arxiv.org/pdf/2108.11846.pdf).
-4. Yixin Liu, Pengfei Liu. [**SimCLS**: A Simple Framework for Contrastive Learning of Abstractive Summarization](https://arxiv.org/pdf/2106.01890.pdf). ACL 2021.
-5. Shusheng Xu, Xingxing Zhang, Yi Wu, Furu Wei. [Sequence Level Contrastive Learning for Text Summarization (**SeqCo**)](https://arxiv.org/pdf/2109.03481.pdf). AAAI 2022.
-6. Mathieu Ravaut, Shafiq Joty, Nancy F. Chen. [**SummaReranker**: A Multi-Task Mixture-of-Experts Re-ranking Framework for Abstractive Summarization](https://arxiv.org/pdf/2203.06569.pdf). ACL 2022.  
-7. Yixin Liu, Pengfei Liu, Dragomir Radev, Graham Neubig. [**BRIO**: Bringing Order to Abstractive Summarization](https://arxiv.org/pdf/2203.16804.pdf). ACL 2022.
-8. Yao Zhao, Misha Khalman, Rishabh Joshi, Shashi Narayan, Mohammad Saleh, Peter J Liu. [Calibrating Sequence Likelihood Improves Conditional Language Generation (**SLiC**).](https://arxiv.org/pdf/2210.00045.pdf). ICLR 2023.
-9. Mathieu Ravaut, Shafiq Joty, Nancy F. Chen. [Towards Summary Candidates Fusion (**SummaFusion**)](https://arxiv.org/abs/2210.08779). EMNLP 2022.
-10. Jeewoo Sul and Yong Suk Choi. [Balancing Lexical and Semantic Quality in Abstractive Summarization (**BalSum**)](https://arxiv.org/pdf/2305.09898.pdf). ACL 2023.
-11. Jiawen Xie, Qi Su, Shaoting Zhang, Xiaofan Zhang. [Alleviating Exposure Bias via Multi-level Contrastive Learning and Deviation Simulation in Abstractive Summarization (**SimMCS**)](https://aclanthology.org/2023.findings-acl.617.pdf). ACL 2023.
+2. <a id="2"></a> Yixin Liu, Zi-Yi Dou, Pengfei Liu. [**RefSum**: Refactoring Neural Summarization](https://arxiv.org/pdf/2104.07210.pdf). NAACL 2021.  
+3. <a id="3"></a> Shichao Sun, Wenjie Li. [Alleviating Exposure Bias via Contrastive Learning for Abstractive Text Summarization (**ConSum**)](https://arxiv.org/pdf/2108.11846.pdf).
+4. <a id="4"></a> Yixin Liu, Pengfei Liu. [**SimCLS**: A Simple Framework for Contrastive Learning of Abstractive Summarization](https://arxiv.org/pdf/2106.01890.pdf). ACL 2021.
+5. <a id="5"></a> Shusheng Xu, Xingxing Zhang, Yi Wu, Furu Wei. [Sequence Level Contrastive Learning for Text Summarization (**SeqCo**)](https://arxiv.org/pdf/2109.03481.pdf). AAAI 2022.
+6. <a id="6"></a> Mathieu Ravaut, Shafiq Joty, Nancy F. Chen. [**SummaReranker**: A Multi-Task Mixture-of-Experts Re-ranking Framework for Abstractive Summarization](https://arxiv.org/pdf/2203.06569.pdf). ACL 2022.  
+7. <a id="7"></a> Yixin Liu, Pengfei Liu, Dragomir Radev, Graham Neubig. [**BRIO**: Bringing Order to Abstractive Summarization](https://arxiv.org/pdf/2203.16804.pdf). ACL 2022.
+8. <a id="8"></a> Yao Zhao, Misha Khalman, Rishabh Joshi, Shashi Narayan, Mohammad Saleh, Peter J Liu. [Calibrating Sequence Likelihood Improves Conditional Language Generation (**SLiC**).](https://arxiv.org/pdf/2210.00045.pdf). ICLR 2023.
+9. <a id="9"></a> Mathieu Ravaut, Shafiq Joty, Nancy F. Chen. [Towards Summary Candidates Fusion (**SummaFusion**)](https://arxiv.org/abs/2210.08779). EMNLP 2022.
+10. <a id="10"></a> Jeewoo Sul and Yong Suk Choi. [Balancing Lexical and Semantic Quality in Abstractive Summarization (**BalSum**)](https://arxiv.org/pdf/2305.09898.pdf). ACL 2023.
+11. <a id="11"></a> Jiawen Xie, Qi Su, Shaoting Zhang, Xiaofan Zhang. [Alleviating Exposure Bias via Multi-level Contrastive Learning and Deviation Simulation in Abstractive Summarization (**SimMCS**)](https://aclanthology.org/2023.findings-acl.617.pdf). ACL 2023.
