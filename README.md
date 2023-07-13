@@ -35,10 +35,10 @@ This is the case of: ConSum [3], SeqCo [5], BRIO-mul [7], SLiC [8], SummaFusion 
 5. Shusheng Xu, Xingxing Zhang, Yi Wu, Furu Wei. [Sequence Level Contrastive Learning for Text Summarization (**SeqCo**)](https://arxiv.org/pdf/2109.03481.pdf). AAAI 2022.
 6. Mathieu Ravaut, Shafiq Joty, Nancy F. Chen. [**SummaReranker**: A Multi-Task Mixture-of-Experts Re-ranking Framework for Abstractive Summarization](https://arxiv.org/pdf/2203.06569.pdf). ACL 2022.  
 7. Yixin Liu, Pengfei Liu, Dragomir Radev, Graham Neubig. [**BRIO**: Bringing Order to Abstractive Summarization](https://arxiv.org/pdf/2203.16804.pdf). ACL 2022.
-8. Yao Zhao, Misha Khalman, Rishabh Joshi, Shashi Narayan, Mohammad Saleh, Peter J Liu. [Calibrating Sequence Likelihood Improves Conditional Language Generation.](https://arxiv.org/pdf/2210.00045.pdf). ICLR 2023.
+8. Yao Zhao, Misha Khalman, Rishabh Joshi, Shashi Narayan, Mohammad Saleh, Peter J Liu. [Calibrating Sequence Likelihood Improves Conditional Language Generation (**SLiC**).](https://arxiv.org/pdf/2210.00045.pdf). ICLR 2023.
 9. Mathieu Ravaut, Shafiq Joty, Nancy F. Chen. [Towards Summary Candidates Fusion (**SummaFusion**)](https://arxiv.org/abs/2210.08779). EMNLP 2022.
-10. Jeewoo Sul and Yong Suk Choi. [Balancing Lexical and Semantic Quality in Abstractive Summarization](https://arxiv.org/pdf/2305.09898.pdf). ACL 2023.
-11. Jiawen Xie, Qi Su, Shaoting Zhang, Xiaofan Zhang. [Alleviating Exposure Bias via Multi-level Contrastive Learning and Deviation Simulation in Abstractive Summarization](https://aclanthology.org/2023.findings-acl.617.pdf). ACL 2023.
+10. Jeewoo Sul and Yong Suk Choi. [Balancing Lexical and Semantic Quality in Abstractive Summarization (**BalSum**)](https://arxiv.org/pdf/2305.09898.pdf). ACL 2023.
+11. Jiawen Xie, Qi Su, Shaoting Zhang, Xiaofan Zhang. [Alleviating Exposure Bias via Multi-level Contrastive Learning and Deviation Simulation in Abstractive Summarization (**SimMCS**)](https://aclanthology.org/2023.findings-acl.617.pdf). ACL 2023.
 
 
 ## Scope
