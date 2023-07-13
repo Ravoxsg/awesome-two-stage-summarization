@@ -23,7 +23,7 @@ We attempt a broad categorization of two-stage abstractive summarization trainin
 * **Fusion** of several summary candidates: SummaFusion [9]
 
 We highlight that some of these models just train the 2nd stage model, which cannot generate summaries by itself and must also rely on 1st stage model summary generation at inference.  
-This is the case of: SimCLS [4], SummaReranker [6], BRIO-ctr [7], BalSum [10]
+This is the case of: SimCLS [4], SummaReranker [6], BRIO-ctr [7], BalSum [10]  
 While other approaches perform multi-task learning, where the model is still fine-tuned with the NLL loss.  
 This is the case of: ConSum [3], SeqCo [5], BRIO-mul [7], SLiC [8], SummaFusion [9], SimMCS [11] 
 
