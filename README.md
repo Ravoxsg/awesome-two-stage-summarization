@@ -51,7 +51,7 @@ And now results with 2-stage models:
 | BRIO [[7](#7)]           | BART           | 47.78   | 23.55   | 44.57   |
 | SLiC [[8](#8)]           | PEGASUS        | 47.97   | 24.18   | 44.88   |
 | BalSum [[10](#10)]       | BART           | 46.58   | 22.33   | 43.49   |
-| SimMCS [[[11](#11)]      | BART           | 48.38   | 24.17   | 44.79   |
+| SimMCS [[11](#11)]      | BART           | 48.38   | 24.17   | 44.79   |
 
 We see that 2nd-stage methods have moved the SOTA from ~44 R-1 to ~48 R-1 in a couple years.
 
