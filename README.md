@@ -12,7 +12,7 @@ Due to these limitations, since around 2021, researchers have started training a
 
 ## Two-stage abstractive summarization techniques
 We attempt a broad categorization of two-stage abstractive summarization training techniques:
-- Using **guidance** from another model to improve the current model: GSum [1](#1)
+- Using **guidance** from another model to improve the current model: GSum [[1](#1)]
 - **Meta-learning** to learn from different systems: RefSum [2]
 - **Contrastive learning** (most popular type of approach):
   - **Contrastive loss**: SeqCo [5]
