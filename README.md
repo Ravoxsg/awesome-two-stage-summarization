@@ -1,15 +1,19 @@
-# Two-stage Abstractive Summarization
+# Two-stage abstractive summarization
 
-## Standard Abstractive Summarization
+## Standard abstractive summarization
 Traditionally, abstractive summarization models are fine-tuned in a single-stage. For instance, one can use a BART, T5 or PEGASUS pre-trained checkpoint, then fine-tune it on the desired dataset. Fine-tuning is done by Maximum Likelihood Estimation (MLE) and negative log-likelihood loss, maximizing the probability that the model assigns to the (unique) ground-truth summary paired with the source document. During training, teacher forcing is used, while during inference, auto-regressive decoding is used. 
 
-## Why two-stage Abstractive Summarization 
+## Why "two-stage" abstractive summarization 
 The above process is not ideal for two main reasons:
 1. The model only optimizes for a single summary, while in practice the search space is huge and there exists plenty of high-quality summaries.
 2. There is a large discrepancy between teacher forcing during training, and auto-regressive decoding during inference, known as the **exposure bias**. At inference, the model has no mechanism to realize it's decoding in a wrong direction, and cannot change course. Besides, it is never trained to build upon its previous predictions.
 
 Due to these limitations, since around 2021, researchers have started training abstractive summarization in two stages. While the 1st stage is the same (MLE with teacher forcing), the 2nd stage training process differs. The overall goal of the 2nd-stage is to calibrate the generation, and a lot of 2nd stage models operate at the sequence level (in contrast to the 1st stage where the loss is at the token level). 
 
+## Two-stage abstractive summarization techniques
+We attempt a broad categorization of two-stage summarization techniques:
+* Using **guidance from another model**: GSum
+* **Meta-learning** approaches: RefSum
 
 ## Scope
 Here we list all of papers related to two-stage neural summarization. Summarization can be extractive or abstractive, we focus on **abstractive** summarization in this repo. The two-stage aspect is defined broadly speaking as any method which involves re-training a base sequence-to-sequence summarization model *which has already been fine-tuned* (using the summary labels from the given dataset). Two-stage models come in different flavors:
