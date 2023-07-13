@@ -36,6 +36,14 @@ We first show results with baseline (1st stage) models:
 | T5 (large)      | 42.50   | 20.68   | 39.75   |
 | BART (large)    | 44.16   | 21.28   | 40.90   |
 | PEGASUS (large) | 44.17   | 21.47   | 41.11   |
+| ProphetNet      | 43.68   | 20.64   | 40.72   |
+
+And now results with 2-stage models:
+
+| **Model**       | **Base Model** | **R-1** | **R-2** | **R-L** |
+|-----------------|----------------|---------|---------|---------|
+| GSum            | BART           | 45.94   | 22.32   | 42.48   |
+
 
 
 ## References
