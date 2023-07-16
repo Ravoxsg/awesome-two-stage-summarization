@@ -22,6 +22,7 @@ We attempt a broad categorization of two-stage abstractive summarization trainin
   - **Expected reward**: SLiC [[9](#9)]
   - Mix of **ranking loss + coarse-grained contrastive learning**: SimMCS [[12](#12)]
 * **Fusion** of several summary candidates: SummaFusion [[10](#10)]
+* **Linear regression** with summary candidates features: SummScore [[13](#13)]
 
 We highlight that some of these models just train the 2nd stage model, which cannot generate summaries by itself and must also rely on 1st stage model summary generation at inference.  
 This is the case of: SimCLS [[5](#5)], SummaReranker [[7](#7)], BRIO-ctr [[8](#8)], BalSum [[11](#11)]  
@@ -32,12 +33,12 @@ This is the case of: ConSum [[4](#4)], SeqCo [[6](#6)], BRIO-mul [[8](#8)], SLiC
 
 We first show results with baseline (1st stage) models:
 
-| **Model**       | **R-1** | **R-2** | **R-L** |
-|-----------------|---------|---------|---------|
-| T5 (large)      | 42.50   | 20.68   | 39.75   |
-| BART (large)    | 44.16   | 21.28   | 40.90   |
-| PEGASUS (large) | 44.17   | 21.47   | 41.11   |
-| ProphetNet      | 43.68   | 20.64   | 40.72   |
+| **Model**                 | **R-1** | **R-2** | **R-L** |
+|---------------------------|---------|---------|---------|
+| T5 (large) [[A](#A)]      | 42.50   | 20.68   | 39.75   |
+| BART (large) [[B](#B)]    | 44.16   | 21.28   | 40.90   |
+| PEGASUS (large) [[C](#C)] | 44.17   | 21.47   | 41.11   |
+| ProphetNet [[D](#D)]      | 43.68   | 20.64   | 40.72   |
 
 And now results with 2-stage models:
 
@@ -59,6 +60,10 @@ We see that 2nd-stage methods have moved the SOTA from ~44 R-1 to ~48 R-1 in a c
 
 
 ## References
+A. <a id="A"></a> Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter J. Liu. [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer (**T5**)](https://arxiv.org/pdf/1910.10683.pdf). JMLR 2020.
+B. <a id="B"></a> Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Ves Stoyanov, Luke Zettlemoyer. [**BART**: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461.pdf). ACL 2020.
+C. <a id="C"></a> Jingqing Zhang, Yao Zhao, Mohammad Saleh, Peter J. Liu. [**PEGASUS**: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf). ICML 2020.
+D. <a id="D"></a> Weizhen Qi, Yu Yan, Yeyun Gong, Dayiheng Liu, Nan Duan, Jiusheng Chen, Ruofei Zhang, Ming Zhou. [**ProphetNet**: Predicting Future N-gram for Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2001.04063.pdf). EMNLP Findings 2020.
 1. <a id="1"></a> Richard Yuanzhe Pang, He He. [Text Generation by Learning from Demonstrations (**GOLD**)](https://arxiv.org/pdf/2009.07839.pdf). ICLR 2021.
 2. <a id="1"></a> Zi-Yi Dou, Pengfei Liu, Hiroaki Hayashi, Zhengbao Jiang, Graham Neubig. [**GSum**: A General Framework for Guided Neural Abstractive Summarization](https://arxiv.org/pdf/2010.08014.pdf). NAACL 2021.  
 3. <a id="2"></a> Yixin Liu, Zi-Yi Dou, Pengfei Liu. [**RefSum**: Refactoring Neural Summarization](https://arxiv.org/pdf/2104.07210.pdf). NAACL 2021.  
@@ -70,4 +75,5 @@ We see that 2nd-stage methods have moved the SOTA from ~44 R-1 to ~48 R-1 in a c
 9. <a id="8"></a> Yao Zhao, Misha Khalman, Rishabh Joshi, Shashi Narayan, Mohammad Saleh, Peter J Liu. [Calibrating Sequence Likelihood Improves Conditional Language Generation (**SLiC**)](https://arxiv.org/pdf/2210.00045.pdf). ICLR 2023.
 10. <a id="9"></a> Mathieu Ravaut, Shafiq Joty, Nancy F. Chen. [Towards Summary Candidates Fusion (**SummaFusion**)](https://arxiv.org/abs/2210.08779). EMNLP 2022.
 11. <a id="10"></a> Jeewoo Sul and Yong Suk Choi. [Balancing Lexical and Semantic Quality in Abstractive Summarization (**BalSum**)](https://arxiv.org/pdf/2305.09898.pdf). ACL 2023.
-12. <a id="11"></a> Jiawen Xie, Qi Su, Shaoting Zhang, Xiaofan Zhang. [Alleviating Exposure Bias via Multi-level Contrastive Learning and Deviation Simulation in Abstractive Summarization (**SimMCS**)](https://aclanthology.org/2023.findings-acl.617.pdf). ACL 2023.
+12. <a id="12"></a> Jiawen Xie, Qi Su, Shaoting Zhang, Xiaofan Zhang. [Alleviating Exposure Bias via Multi-level Contrastive Learning and Deviation Simulation in Abstractive Summarization (**SimMCS**)](https://aclanthology.org/2023.findings-acl.617.pdf). ACL 2023.
+13. <a id="13"></a> Mathieu Ravaut, Shafiq Joty, Nancy Chen. [Unsupervised Summarization Re-ranking (**SummScore**)](https://arxiv.org/pdf/2212.09593.pdf). ACL Findings 2023.
